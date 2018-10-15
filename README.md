@@ -4,5 +4,5 @@
 ## 微信小程序
 ### 位置：dynamic-echarts-demo-wx
 
-### html
-## 位置：dynamic-echarts-demo-html
+## html
+### 位置：dynamic-echarts-demo-html
