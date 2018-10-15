@@ -1,8 +1,8 @@
 # dynamic-echarts-demo
 实现微信小程序以及HTML动态加载echarts数据的demo
 
-# 微信小程序
-### dynamic-echarts-demo-wx
+## 微信小程序
+### 位置：dynamic-echarts-demo-wx
 
-# html
-### dynamic-echarts-demo-html
+### html
+## 位置：dynamic-echarts-demo-html
