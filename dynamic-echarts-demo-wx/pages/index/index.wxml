@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view>
+  <button bindtap="getData">切换</button>
+  <view class="container">
+    <ec-canvas id="mychart" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+  </view>
+</view>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dynamic echarts demo (html)</title>
+	<meta charset="utf-8">
+	<script src="echarts.js"></script>
+</head>
+<body>
+	<button onclick="getData()">change</button>
+	<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+	<div id="main" style="width: 600px;height:400px;"></div>
+	<script type="text/javascript">
+		// 基于准备好的dom，初始化echarts实例
+        var Chart = echarts.init(document.getElementById('main'));
+        var dataList = [];
+		var k = 0;
+        getData();
+
+        function getData(){
+		  	/**
+		  	 * 此处的操作：
+		  	 * 获取数据json
+		  	 */
+			if(k % 2){
+		      dataList = [1, 2, 3, 4, 5, 6];
+		    }else{
+		      dataList = [7, 6, 9, 2, 5, 6];
+		    }
+		    k++;
+		    this.init_echarts();//初始化图表
+		}
+		//初始化图表
+	  	function init_echarts(){
+		    Chart.clear(); //清空
+		    Chart.setOption(this.getOption());
+		}
+		function getOption(){
+		  	// 指定图表的配置项和数据
+		    var option = {
+		    	xAxis: {
+		        	type: 'category',
+		        	data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+		      	},
+		      	yAxis: {
+		        	type: 'value'
+		      	},
+		      	series: [{
+		        	data: dataList,
+		        	type: 'line'
+		      	}]
+		    }
+		    return option;
+		}
+	</script>
+</body>
+</html>
