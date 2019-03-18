@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/other/index",
     "pages/logs/logs"
   ],
   "window":{
@@ -8,5 +9,21 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "动态加载echarts",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#ACADBE",
+    "backgroundColor": "#FFFFFF",
+    "selectedColor": "#29bf9b",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "图表"
+      },
+      {
+        "pagePath": "pages/other/index",
+        "text": "首页"
+      }
+    ]
   }
 }

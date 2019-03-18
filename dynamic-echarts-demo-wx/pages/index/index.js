@@ -67,6 +67,10 @@ Page({
   getOption: function () {
     // 指定图表的配置项和数据
     var option = {
+      tooltip: {
+        show: true,
+        trigger: 'axis'
+      },
       xAxis: {
         type: 'category',
         data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
