@@ -61,7 +61,7 @@ Page({
     });
   },
   setOption: function (Chart) {
-    Chart.clear();  // 清除
+    // Chart.clear();  // 清除
     Chart.setOption(this.getOption());  //获取新数据
   },
   getOption: function () {
