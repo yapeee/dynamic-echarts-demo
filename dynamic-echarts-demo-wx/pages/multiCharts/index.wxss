@@ -1,0 +1,5 @@
+/* pages/multiCharts/index.wxss */
+ec-canvas {
+  width: 800rpx;
+  height: 500rpx;
+}
